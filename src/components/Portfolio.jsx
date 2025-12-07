@@ -7,19 +7,19 @@ const projects = [
     title: "CSIT Mock Test",
     description: "A mock test app for CSIT students. Built with React & Tailwind CSS.",
     image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    github: "https://github.com/biswaskhatri639/csit-mock-test",
+    github: "https://github.com/Biswaskhatri/OEPS",
   },
   {
-    title: "Project 2",
-    description: "Dummy project to test multiple cards.",
-    image: "https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGljJTIwdGFjfGVufDB8fDB8fHww",
-    github: "#",
+    title: "Simple Quiz",
+    description: "simple Quiz for entertainment purpose.",
+    image:' https://media.istockphoto.com/id/1398690866/photo/the-inscription-quiz-on-wooden-blocks-other-blocks-with-question-marks-the-concept-of.webp?a=1&b=1&s=612x612&w=0&k=20&c=pujYXirwDyUuGinui81iMrYfb5oIU6xZckQYFJUjaQc= ',
+    github: "https://github.com/Biswaskhatri/Quiz",
   },
   {
-    title: "Project 3",
-    description: "Another modern project demo.",
+    title: "TO-DO List",
+    description: "A responsive To-Do List app to efficiently add, edit, and manage tasks with persistent storage",
     image: "https://plus.unsplash.com/premium_photo-1684330691489-2eb2620db612?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFza3xlbnwwfHwwfHx8MA%3D%3D",
-    github: "#",
+    github: "https://github.com/Biswaskhatri/TO-DO-List.git",
   },
 ];
 
@@ -48,16 +48,13 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
             >
-              {/* Project Image */}
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-64 sm:h-72 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-110"
               />
-
-              {/* Overlay */}
               <motion.div
-                className="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-end p-6 rounded-3xl"
+                className="absolute inset-0 bg-black/60 opacity-100 sm:opacity-0 hover:opacity-100 transition-opacity flex flex-col justify-end p-6 rounded-3xl"
                 whileHover={{ opacity: 1 }}
               >
                 <h3 className="text-white text-xl font-bold mb-2">{project.title}</h3>

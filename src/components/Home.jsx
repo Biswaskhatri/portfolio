@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-cyan-50 px-6 py-20">
+    <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-indigo-50 via-white to-cyan-50 px-6 py-20">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
 
-        {/* TEXT */}
+       
         <motion.div
           className="w-full md:w-1/2 text-center md:text-left"
           initial={{ opacity: 0, x: -50 }}
@@ -54,7 +54,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1506968695017-764f86a9f9ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Ym95fGVufDB8fDB8fHwwr"
                 alt="Biswas Khatri"
-                className="w-52 sm:w-60 md:w-64 lg:w-72 h-52 sm:h-60 md:h-64 lg:h-72 rounded-2xl shadow-2xl object-cover"
+                className="w-55 sm:w-65 md:w-69 lg:w-77 h-57 sm:h-65 md:h-69 lg:h-77 rounded-2xl shadow-2xl object-cover"
               />
             </motion.div>
             <div className="absolute w-52 sm:w-60 md:w-64 lg:w-72 h-52 sm:h-60 md:h-64 lg:h-72 bg-indigo-300/20 blur-3xl rounded-2xl -z-10 top-0 left-0 animate-pulse"></div>
